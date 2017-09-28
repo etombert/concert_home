@@ -1,0 +1,959 @@
+/*MENU BURGER*/
+#nav-r {
+	display: none;
+}
+
+.navigation {
+    background: none;
+}
+
+nav {
+	width:100%; 
+	background:#000000; 
+	height:70px; 
+	line-height:50px;
+	position: fixed;
+	z-index: 3000;
+	opacity: 0.9;
+}
+
+nav a img {
+	padding: 20px;
+	float: left;
+}
+
+a:link{
+	text-decoration: none;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:6px 20px 0px 20px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:2px;
+  padding:6px 20px 0px 20px;
+  color:#fff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu {
+	z-index:1000000; 
+	font-weight:bold; 
+	font-size:0.8em; 
+	width:100%; 
+	background:#131313;  
+	position:absolute; 
+	text-align:center;
+	}
+.menu ul {
+	margin: 0; 
+	padding: 0; 
+	list-style-type: none; 
+	list-style-image: none;
+	}
+.menu li {
+	display: block;   
+	padding:5px 0 5px 0; 
+	border-bottom:#1d1f20 1px solid;
+	}
+.menu li:hover {
+	display: block;    
+	background:#181818; 
+	padding:5px 0 5px 0; 
+	border-bottom:#1d1f20 1px solid; 
+	background-color: #fbd260;
+	transition: 1s;   
+}
+.menu ul a { 
+	text-decoration:none;  
+	margin: 0px; 
+	color:#fff;
+}
+.menu ul a:hover {  
+	color: #fff; 
+	text-decoration:none;}
+.menu a {
+	text-decoration:none; 
+	color:white;
+}
+.menu a:hover{
+	text-decoration:none; 
+	color:black;
+}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+
+/*BODY*/
+body{
+	background: black;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	width: 100%;
+}
+
+
+button a{
+	text-decoration: none;
+}
+
+/*PARTIE 2 HEADER*/
+header ul li{
+    display: inline-block;
+    padding: 5px 15px;
+  	margin-bottom: 0px;
+  	font-size: 13px;  
+    font-weight: bolder;
+}
+
+header a {
+	display: inline-block;
+	padding: 5px 15px;
+	text-decoration: none;
+	color:#ffffff;
+}
+
+header ul {
+	display: inline-block;
+	float:right;
+}
+
+a:link { 
+	color:white;
+ text-decoration:none; 
+} 
+
+.header ul li a:hover, a:focus {
+	text-shadow: none;
+    color: #fec503;
+    border-radius: 5px;
+}
+a.login{
+	color: #fec503;
+}
+
+
+.recherche{	
+	position:relative;top: 2px;
+	border-radius: 10px;
+	border-color: black;
+	background-color: transparent;
+	color: white;
+	text-decoration: none;
+	color:#ffffff;
+	font-size: 13px;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+
+.recherche:focus{	
+	border-radius: 0px;
+	background-color: transparent;
+	color: white;	
+	outline: none;
+	border:solid 1px #63666A;
+}
+
+
+
+
+/* bloc 1*/
+	/*BACKGROUND VIDEO*/
+	video { 
+	    position: fixed;
+	    top: 50%;
+	    left: 50%;
+	    min-width: 100%;
+	    min-height: 100%;
+	    width: auto;
+	    height: auto;
+	    z-index: -100;
+	    transform: translateX(-50%) translateY(-50%);
+	  background-size: cover;
+	  transition: 1s opacity;
+	}
+
+
+.photo{
+	height: 100vh;
+}
+
+.slogan h1{
+	font-size: 50px;
+	color: #fbd260;
+	width: 90%;
+		margin: auto;
+
+}
+.slogan{
+	position: relative; top: 30vh;
+	text-align: center;
+}
+
+#savoir{
+	width: 245px;
+	height: 60px;
+	font-size: 18px;
+	border-radius: 30px;
+	border: #fbd260 solid 2px;
+	background-color: transparent;
+	color: #fbd260;
+	margin-top: 100px;
+	font-weight : 400;
+	outline: none;
+}
+
+#location{
+	width: 245px;
+	height: 60px;
+	font-size: 18px;
+	border-radius: 30px;
+	background-color: #fbd260;
+	color: black;
+	border: none;
+	margin-left: 100px;
+	font-weight:400;
+	outline: none;
+
+}
+
+
+/* bloc 2*/
+.page2 {
+	background: black;
+	padding-top: 20px;
+	color:#ffffff;
+}
+
+#myCarousel {
+	height: 700px;
+    overflow: auto;
+}
+
+#responsive{
+	display: none;
+}
+
+
+#oculuspng{
+	float: left;
+	width:30%; 
+	height:30%; 
+	margin-left:225px; 
+	margin-top: 80px;
+	position:relative; top:120px;
+}
+
+
+
+h2{
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.concept{
+	float: left;
+	width: 370px;
+	height: 400px;
+	text-align: center;
+	margin-top: 265px;
+	margin-left: 100px;
+	position:relative; bottom:100px;
+}
+
+.texte{
+	line-height: 25px;
+	margin-top: 20px;
+	width: 370px;
+	height: 200px;
+}
+
+
+.lol{
+	position: relative;left: 120px; 
+	line-height: 25px;
+	margin-top: 100px;
+	width: 350px;
+	height: 200px;
+}
+	
+
+.video{
+	float: right;
+	width:500px;
+	height:275px;
+	margin-right: 200px;
+	margin-top: 220px;
+}
+
+
+/* bloc 3*/
+.title{
+	font-size: 30px;
+	font-weight: 300;
+	margin-top: 80px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+
+.page3 {
+	background: url(img/louer2.png) no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	background-size: cover;
+	height: 100vh;
+	margin-top: -80px;
+}
+.alouer {
+	position: relative; top: 190px;
+}
+#artist{
+	width: 245px;
+	height: 60px;
+	font-size: 18px;
+	border-radius: 30px;
+	border: none;
+	background-color: #fbd260;
+	color: black;
+	margin-top: 100px;
+	font-weight : 400;
+	outline: none;
+}
+
+#genre {
+	width: 245px;
+	height: 60px;
+	font-size: 18px;
+	border-radius: 30px;
+	border: none;
+	background-color: #fbd260;
+	color: black;
+	margin-left: 200px;
+	font-weight : 400;
+	outline: none;
+}
+
+
+
+/*bloc 4*/
+
+/*GENERAL*/
+.page4{
+	background: black;
+	padding-top: 40px;
+	height: 1000px;
+}
+
+
+.position{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.page4 li{
+	width: 100%;
+	clear: both;
+	font-weight: 300;
+}
+
+div.droite, .gauche{
+	width: 50%;
+}
+
+.blanc{
+	background: white;
+	float: right;
+	width: 350px;
+	height: 167px;
+}
+
+.blanc2{
+	background: white;
+	float: left;
+	width: 350px;
+	height: 167px;
+}
+
+.droite{
+	float: right;
+}
+
+.gauche{
+	float: left;
+}
+
+
+
+
+/*PREMIER*/
+
+
+ul.perry{
+	text-align: center;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+li.nom{
+	font-size: 27px;
+	color: black;
+}
+
+li.nom2{
+	font-size: 20px;
+	color: black;
+}
+
+li.description{
+	font-size: 12px;
+	color: black;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.katyimg{
+	float: left;
+	display: block;
+}
+
+
+
+
+/*DEUXIEME*/
+
+ul.cold{
+	text-align: center;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+.coldplayimg{
+	float: right;
+	display: block;
+}
+
+
+/*TROISIEME*/
+ul.swift{
+	text-align: center;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+.taylorimg{
+	float: left;
+	display: block;
+}
+
+/*QUATRIEME*/
+ul.papaoutai{
+	text-align: center;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+.stromaeimg{
+	float: right;
+	display: block;
+}
+
+/*CINQUIEME*/
+ul.bloodysunday{
+	text-align: center;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+.u2img{
+	float: left;
+	display: block;
+}
+
+.droite img{
+	opacity:0.6;
+			transition: 1s;
+			background: grey;
+}
+
+.gauche img{
+	opacity:0.6;
+			transition: 1s;
+			background: grey;
+}
+
+.droite img:hover{
+	opacity:1;
+			transition: 1s;
+			background: grey;
+}
+
+.gauche img:hover{
+	opacity:1;
+			transition: 1s;
+			background: grey;
+}
+
+
+
+
+
+
+/*FOOTER*/
+footer{
+	background: black;
+	width: 100%;
+	height: 80px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.oculus{
+	float: left;
+	width: 95px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.giroptic{
+	float: left;
+	width: 95px;
+	margin-left: 30px;
+	margin-top: 33px;
+	margin-bottom: -10px;
+}
+
+.dmab{
+	float: left;
+	width: 85px;
+	margin-left: 25px;
+	margin-top: 20px;
+
+}
+.caisseepargne{
+	float: left;
+	width: 85px;
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
+.facebook{
+	float: right;
+	margin-right: 70px;
+	margin-top: 20px;
+}
+
+.twitter{
+	float: right;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+    /* FENETRE POP UP*/
+a.popup-light {
+	color: white;
+}
+
+.voile-noir { 
+	position: fixed; 
+	display: none; 
+	left: 0; 
+	top: 0;  
+	width: 100%; 
+	height: 100%; 
+	opacity: 0.75; 
+	background: grey;  
+	z-index: 9999; 
+} 
+ 
+.popup-block { 
+	position: fixed; 
+	display: none; 
+	top: 50%; 
+	left: 50%; 
+	padding: 20px;   
+	z-index: 99999; 
+	font-size: 1.2em; 
+	background: black; 
+	border: 20px solid black; 
+	color:#fec503; 
+} 
+
+.popup-block2{ 
+	position: fixed; 
+	display: none; 
+	top: 50%; 
+	left: 50%; 
+	padding: 20px;   
+	z-index: 99999; 
+	font-size: 1.2em; 
+	background: black; 
+	border: 20px solid black; 
+	color:#fec503;
+} 
+
+.formulaire p{
+	font-size:50%;
+}
+
+.formulaire input{
+	font-size:50%;
+}
+
+.popup-login{
+	position: fixed; 
+	display: none; 
+	top: 50%; 
+	left: 50%; 
+	padding: 20px;   
+	z-index: 99999; 
+	font-size: 1.2em; 
+	background: black; 
+	border: 20px solid black; 
+	color:#fec503;
+}
+
+.popup-login input{
+	margin: 10px;
+	font-size: 50%;
+}
+
+.popup-signup{
+	position: fixed; 
+	display: none; 
+	top: 50%; 
+	left: 50%; 
+	padding: 20px;   
+	z-index: 99999; 
+	font-size: 1.2em; 
+	background: black; 
+	border: 20px solid black; 
+	color:#fec503;
+	    height: 560px;
+}
+
+#mois {
+	font-size: 50%;
+}
+
+
+#facebook{
+	font-family: helvetica;
+	background-color: #3B5998;
+	color:white;
+	font-size: 50%;
+	border-radius: 30px;
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-left:105px;
+		padding-right:105px;
+	margin-bottom: 15px;
+	border:none;
+}
+
+#connect {
+	font-family: helvetica;
+	background-color: #fec503;
+	color:white;
+	font-size: 50%;
+	border-radius: 30px;
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-left:90px;
+		padding-right:90px;
+	margin: 15px;
+	border:none;
+}
+
+#line{
+	margin: 30px 0 30px 0;
+	border-bottom:1px solid #fec503;
+}
+
+            
+.popup p { 
+	padding: 5px 10px; 
+	margin: 5px 0; 
+} 
+
+.popup-btn-close { 
+	float: right;  
+	margin: -30px -30px 0 0; 
+	width: 20px;
+} 
+
+.go{
+	background-color: transparent;
+	color: #fbd260;
+	font-weight: 400;
+	outline: none;
+	font-size: 12px;
+	border: none;
+}
+
+.salut{
+	font-size: 20px;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #fbd260;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.search{
+	color: black;
+	position: relative;top: -2px;
+	background: transparent;
+	border: none;
+	font-size: 14px;
+	height: 20px;
+	width: 150px;
+	outline: none;
+	border-bottom: 1px solid #fbd260;
+	color: #fff; 
+}
+
+.popuplogin{
+	position:fixed;
+    background-color:yellow;
+    left:2000px;
+    width:390px;
+    height:390px;
+    margin:5px;
+}
+
+@media screen and (max-width: 1020px){
+
+	/*PAGE ONE*/
+	#navigation {
+		display: none;
+	}
+
+	#nav-r {
+		display: block;
+		height: 60px;
+	}
+
+	/*PAGE TWO*/
+	.page2 {
+		height:auto;
+		padding: 3%;
+	}
+
+	#responsive{
+		display: block;
+	}
+
+	#myCarousel {
+		display: none;
+	}
+
+	#oculuspng-r {
+	    width: 40%;
+		margin: auto;
+		display: block;
+		padding-top: 50px;
+ 		padding-bottom: 50px;
+	}
+	.title{
+		font-size: 30px;
+		margin-bottom: 50px;
+		margin-top: 60px;
+	    padding: 0 11px 0 10px;
+	    font-weight: 900;
+	}
+
+	.texte-r {
+		text-align: justify;
+		font-size: 15px;
+		padding: 3%;
+		font-family: sans-serif;
+		line-height: 1.5;
+	}
+
+
+	.video-r {
+		margin: auto;
+	    display: block;
+	    width: 90%;
+	    height: 575px;
+	    padding-top: 50px;
+	}
+	/*PAGE THREE*/
+	form {
+		width: 100%;
+	}
+
+	.search {
+		width: 100%;
+	}
+
+	/*PAGE FOUR*/
+	.blanc {
+	    background: white;
+	    float: right;
+	    width: 71%;
+	}
+
+	.gauche img {
+   		width: 100%;
+	}
+	.droite img {
+   		width: 100%;
+	}
+
+	.blanc,.blanc2 {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px){
+.photo{
+	background: url(img/photo.jpg) no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	background-size: cover;
+	height: 100vh;
+}
+
+	.slogan h1 {
+		width: 90%;
+		margin: auto;
+	    font-size: 30px;
+	    color: #fbd260;
+	}
+
+.back-video {
+	display: none;
+}
+	/*PAGE THREE*/
+	#artist {
+	    margin-left: 0;
+	   	margin-top: 75px;
+		margin-bottom: 35px;
+	}
+	#genre {
+		    margin-left: 0;
+		}
+	#savoir{
+	width: 225px;
+	height: 60px;
+	font-size: 18px;
+	border-radius: 30px;
+	border: #fbd260 solid 2px;
+	background-color: transparent;
+	color: #fbd260;
+	margin-top: 100px;
+	font-weight : 400;
+	outline: none;
+}
+
+#location{
+	width: 225px;
+	height: 60px;
+	font-size: 18px;
+	border-radius: 30px;
+	background-color: #fbd260;
+	color: black;
+	border: none;
+	margin-left: 1%;
+	font-weight:400;
+	outline: none;
+
+}
+
+	.slogan {
+	    position: relative;
+	    top: 25vh;
+	    text-align: center;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	.slogan h1 {
+		width: 90%;
+	    font-size: 25px;
+	    color: #fbd260;
+	}
+
+	.title {
+	    font-size: 20px;
+	}
+
+	#savoir,#location {
+    width: 225px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+	#artist,#genre {
+	    width: 245px;
+	    height: 50px;
+	    font-size: 15px;
+	    font-weight: bold;
+	}
+
+	li.nom {
+	    font-size: 20px;
+	}
+
+	li.nom2 {
+	    font-size: 15px;
+	}
+}
+
+
+@media screen and (max-width: 414px){
+	nav a img {
+	    width: 50%;
+	}
+	/*PAGE ONE*/
+.slogan {
+    position: relative;
+    top: 30vh;
+    text-align: center;
+}
+
+	#savoir {
+	    margin-top: 75px;
+		margin-bottom: 35px;
+	}
+
+	#location {
+    	margin-left: 0;
+	}
+
+	/*PAGE THREE*/
+	#artist {
+	    margin-left: 0;
+	   	margin-top: 75px;
+		margin-bottom: 35px;
+	}
+	#genre {
+		    margin-left: 0;
+		}
+}

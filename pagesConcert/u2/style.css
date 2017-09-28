@@ -1,0 +1,251 @@
+/*BODY*/
+body{
+	background: black;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	float: left;
+	width: 100%;
+}
+
+/*HEADER*/
+header {
+    background: black;
+    padding: 15px 5px 0px 5px;
+}
+
+/*PARTIE 2 HEADER*/
+header ul li{
+    display: inline-block;
+    padding: 5px 15px;
+  	margin-bottom: 0px;
+  	font-size: 13px;  
+}
+
+header a {
+		display: block;
+		margin: auto;
+	text-decoration: none;
+	color:#ffffff;
+}
+
+header a img {
+	    margin: auto;
+    display: block;
+}
+
+header ul {
+	display: inline-block;
+	float:right;
+}
+
+a:link { 
+	color:white;
+ text-decoration:none; 
+} 
+
+.header ul li a:hover, a:focus {
+	text-shadow: none;
+    color: #fec503;
+    border-radius: 5px;
+}
+a.login{
+	color: #fec503;
+}
+
+.recherche{
+	border-radius: 10px;
+	border-color: black;
+	background-color: transparent;
+	color: white;
+	text-decoration: none;
+	color:#ffffff;
+	font-size: 13px;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	
+}
+
+.recherche:focus{
+	outline: none;
+	border-radius: 0;
+	border: #63666A solid 1px;
+	background-color: transparent;
+	color: #63666A;	
+}
+
+
+
+/*BODY*/
+html{
+	background: black;
+}
+
+body{
+	background: url(img/u2.png) no-repeat;
+	background-position-x: 50%;
+	background-attachment: fixed;
+	font-family: lato;
+}
+
+.bloc{
+	margin-top:  350px;
+	background: #303030;
+	width: 100%;
+
+	float: left;
+	clear: both;
+	height: auto;
+}
+
+.affiche{
+	float: left;
+	width: 290px;
+	margin-left: 110px;
+	margin-top: 110px;
+}
+
+h1{
+	float: right;
+	margin-top: 110px;
+	margin-right: 735px;
+	color: #fbd260;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.liste{
+	color: white;
+	list-style-type: none;
+	float: right;
+	margin-right: 535px;
+	margin-top: 50px;
+	line-height: 40px;
+	font-weight: 100;
+}
+
+
+a.oculus{
+	color: #e7c25b;
+	text-decoration: none;
+	float: right;
+	clear: both;
+	margin-right: 365px;
+	position: relative;top: -75px;
+	font-size: 12px;
+	width: 130px;
+	font-weight: 300;
+}
+
+.louer{
+	background: #e7c25b;
+	float: right;
+	clear: both;
+	border-radius: 20px;
+	border:none;
+	width: 150px;
+	padding: 12px;
+	margin-right: 200px;
+	margin-bottom: 30px;
+	font-size: 14px;
+	outline:none;
+	cursor:pointer;
+}
+
+
+
+/*FOOTER*/
+footer{
+	background: black;
+	width: 100%;
+	float: left;
+	clear: both;
+	height: auto;
+}
+
+.oculus{
+	float: left;
+	width: 95px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.giroptic{
+	float: left;
+	width: 95px;
+	margin-left: 30px;
+	margin-top: 33px;
+	margin-bottom: -10px;
+}
+
+.dmab{
+	float: left;
+	width: 85px;
+	margin-left: 25px;
+	margin-top: 20px;
+
+}
+.caisseepargne{
+	float: left;
+	width: 85px;
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
+.facebook{
+	float: right;
+	margin-right: 70px;
+	margin-top: 20px;
+}
+
+.twitter{
+	float: right;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 1210px){
+	header a {
+		display: block;
+		margin: auto;
+	}
+
+	.affiche {
+		margin: auto;
+		display: block;
+		float: none;
+		margin-top: -60px;
+		    width: 50%;
+	}
+
+	h1 {
+		float: none;
+		margin-right: 0;
+		text-align: center;
+		margin-top: 80px;
+	}
+
+	.liste {
+		float: none;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	.louer {
+		float: none;
+		margin-right: 0;
+    	margin-bottom: 0;
+    	margin: 15px auto;
+    	display: block;
+	}
+
+	a.oculus {
+		float: none;
+		margin-right: 0;
+    	position: static;
+    	margin: auto;
+    	display: block;
+    	padding: 20px 0 50px 0;
+	}
+
+}
+

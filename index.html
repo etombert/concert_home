@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="favicon.png">
+	<title>Regardez des concerts depuis chez vous</title>
+
+	<!--SCROLL LEFT-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!--CSS Principal-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+
+	<!--fenetre pop up-->	
+    <script src="./js/fenetre.js"></script>
+
+   	<!-- Gsap -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+
+</head>
+
+
+<body>
+<!-- navigation -->
+    <header id="navigation" class="navigation">
+		<a class="scrollTo" href=".photo"><img src="img/logo.png"></a>
+			<ul class="navigation">
+				<a href="#page-top">
+					<li class="hidden"></li>
+				</a>
+				<a class="scrollTo" href=".page2">
+					<li>
+						LE CONCEPT
+					</li>
+				</a>
+				<a class="scrollTo" href=".page3">
+					<li>
+						LOCATION
+					</li>
+				</a>
+				<a class="scrollTo" href=".page4">
+					<li>
+						CONCERTS RECENTS
+					</li>
+				</a>
+				<li>
+					<a href="#" class="popup-light" data-popup-class="popup-signup" data-popup-width="50%">S'INSCRIRE</a>
+				</li>  	
+				<li>
+					<a href="#" class="popup-light" data-popup-class="popup-login" data-popup-width="50%">S'IDENTIFIER</a>
+				</li>  
+			 </ul>
+	</header>
+
+	<nav id="nav-r"><!-- DEBUT HEADER -->
+		<a class="scrollTo" href=".photo">
+		<img src="img/logo.png"></a>				
+		<button class="hamburger">☰</button>
+			<button class="cross">&#735;</button>
+				<div class="menu">
+					<ul>
+						<li>
+							<a class="scrollTo" href=".page2">LE CONCEPT</a>
+						</li>
+						<li>
+							<a class="scrollTo" href=".page3">LOCATION</a>
+						</li>
+						<li>
+							<a class="scrollTo" href=".page4">CONCERTS RECENTS</a>
+						</li>
+					</ul>
+				</div> 
+	</nav><!-- FIN HEADER -->
+
+<!-- bloc 1 -->
+	<div class="photo">
+		<video src="img/background.mp4" loop autoplay class="back-video"></video>
+		<div class="slogan">
+			<h1>Vivez l'expérience d'un concert chez vous.</h1>
+			<a class="scrollTo" href=".page2"><button name="button" id="savoir">En savoir plus</button></a>
+			<a class="scrollTo" href=".page3"><button name="button" id="location">Location</button>
+			</a>
+		</div> 
+	</div>
+
+<!-- bloc 2 -->
+		<div class="page2"><!-- DEBUT PAGE 2 -->				
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner" role="listbox"><!-- Wrapper for slides -->
+					<div class="item active">
+						<img src="img/oculus.png" class="oculusimg" id="oculuspng">
+						<div class="concept">
+							<h2 class="title">Le concept</h2>
+								<p class="texte">
+									Revivez le concert de votre groupe préféré, depuis chez vous, comme si vous y étiez ! <br/>
+									Grâce à notre partenariat avec Oculus, nous vous offrons la possibilité d’expérimenter les concerts en réalité augmentée. 
+								</p>
+						</div>
+      				</div>
+
+      				<div class="item">
+						<iframe  src="https://www.youtube.com/embed/j81DDY4nvos" frameborder="0" allowfullscreen class="video"></iframe>
+						<div class="concept">
+								<p class="lol">
+									L’Oculus Rift, la nouvelle génération de réalité virtuelle.
+
+							Le Rift est une expérience sans précédent qui vous immerge dans un monde virtuel à réalité augmentée.
+
+							CONCERT’Home vous offre la possibilité de louer la vidéo 360° du concert de votre choix pour revivre les émotions de votre soirée inoubliable.
+								</p>
+						</div>
+      				</div>
+ 
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><!-- Left and right controls -->
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+
+			<div id="responsive">
+				<div class="concept-r">
+					<h2 class="title">Le concept</h2>
+						<p class="texte-r">
+							Revivez le concert de votre groupe préféré, depuis chez vous, comme si vous y étiez ! <br/>
+							Grâce à notre partenariat avec Oculus, nous vous offrons la possibilité d’expérimenter les concerts en réalité augmentée. 
+						</p>
+					<img src="img/oculus.png" class="oculusimg" id="oculuspng-r">
+				</div>
+
+				<div class="concept-2">
+					<p class="texte-r">
+							L’Oculus Rift, la nouvelle génération de réalité virtuelle.
+
+					Le Rift est une expérience sans précédent qui vous immerge dans un monde virtuel à réalité augmentée.
+
+					CONCERT’Home vous offre la possibilité de louer la vidéo 360° du concert de votre choix pour revivre les émotions de votre soirée inoubliable.
+						</p>
+					<iframe  src="https://www.youtube.com/embed/j81DDY4nvos" frameborder="0" allowfullscreen class="video-r"></iframe>
+				</div>
+			</div>
+		</div><!-- FIN PAGE 2 -->
+
+<!-- bloc 3 -->
+			<div class="page3">
+				<div class="title alouer">Louez votre concert<br/>
+					<section class="conteneur"> 
+
+					<a href="#" class="popup-light" data-popup-class="popup-block" data-popup-width="50%"><button name="button" id="artist">Rechercher par Artiste</button></a>
+
+					<a href="#" class="popup-light" data-popup-class="popup-block2" data-popup-width="50%"><button name="button" id="genre">Rechercher par Genre</button></a>
+				 	</section> 
+
+<!--Pop-up fenêtres-->
+				 	<section class="popup-block">  
+					 	<form>
+					 		<p>
+	        					<label class="salut">Votre artiste :</label>  <input type="text" name="artist" class="search" placeholder="ex : Kendrick Lamar"/>
+	        					<button class="go">GO</button>
+	    					</p>				 		
+					 	</form>
+
+    				</section> 
+    			
+					<section class="popup-block2">  
+						<form>
+							<p>
+					        	<label class="salut">Votre genre :</label> <input type="text" name="genre" class="search" placeholder="ex : Rap"/>
+					        	<button class="go">GO</button>
+					    	</p>				 		
+						</form>
+					</section>
+
+										<section class="popup-login"><img src="img/logo.png">
+						<div id="line"></div>
+							<div class="formulaire">
+								<button id="facebook">Connexion avec Facebook</button>
+								
+
+								<p style="margin:8px">ou</p>
+									<form action="login.php" method="post">
+										<input type="email" id="email" placeholder="Nom d'utilisateur" size="50"></input><br>
+										<input type="password" placeholder="Mot de passe" size="50"></input>
+										<button id="connect">Se connecter</button>
+										<p><a href="">Nom d'utilisateur ou mot de passe oublié ?</a></p><br>
+										<p>Vous n'avez pas de compte ? <a href="">S'inscrire</a></p>
+								</form>			
+							</div>
+					</section> 
+
+					<section class="popup-signup"><img src="img/logo.png">
+						<div id="line"></div>
+							<div class="formulaire">
+								<button id="facebook">Connexion avec Facebook</button>
+								
+
+								<p style="margin:8px">ou</p>
+									<form action="signup.php" method="post">
+
+										<input type="text" name="user" id="user" placeholder="Nom d'utilisateur" size="50"></input><br>
+										<input type="password" name="pwd" id="pwd" placeholder="Mot de passe" size="50"></input>
+										<input type="email" name="email" id="email" placeholder="Adresse électronique" size="50"></input>
+										<input type="email" name="email_confirm" id="email_confirm" placeholder="Confirmation email" size="50" onblur="confirmEmail()"></input><br><br>
+
+										<p>Date de naissance :</p>
+										<input name="jour" id="jour" size="5" placeholder="Jour"></input>	
+											<select name="mois" id="mois">
+									           <option value="Janvier">Janvier</option>
+									           <option value="Février">Février</option>
+									           <option value="Mars">Mars</option>
+									           <option value="Avril">Avril</option>
+									           <option value="Mai">Mai</option>
+									           <option value="Juin">Juin</option>
+									           <option value="Juillet">Juillet</option>
+									           <option value="Août">Août</option>
+									           <option value="Septembre">Septembre</option>
+									           <option value="Octobre">Octobre</option>
+									           <option value="Novembre">Novembre</option>
+									           <option value="Décembre">Décembre</option>
+									       </select>
+										<input name="annee" id="annee" size="7" placeholder="Année"></input><br>
+
+										<input type="submit" value="S'inscrire" id="connect">
+										
+
+								</form>			
+								
+
+								</div>
+					</section>  
+
+				</div> 
+			</div>	
+<!-- bloc 4 -->
+			<div class="page4">
+
+				<div class="title position">Concerts récents</div>
+
+				<ul>
+					<li>
+						<div class="droite">
+							<a href="pagesConcert/katy/index.html"><img src="img/katy.png" class="katyimg"></a>
+						</div>
+						<div class="gauche">
+							<a href="pagesConcert/katy/index.html">
+								<div class="blanc">
+									<ul class="perry">
+										<li class="nom">Katy Perry</li>
+										<li class="nom2">Prismatic World</li>
+										<li class="description">Tour 2015</li>
+										<li class="description">Lyon - Halle Tony Garnier</li>
+										<li class="description">20 février</li>
+									</ul>
+								</div>
+							</a>
+						</div>
+					</li>
+
+
+					<li>
+						<div class="droite">
+							<a href="pagesConcert/coldplay/index.html">
+								<div class="blanc2">
+									<ul class="cold">
+										<li class="nom">Coldplay</li>
+										<li class="nom2">Ghosts stories</li>
+										<li class="description">Tour 2015</li>
+										<li class="description">Londres - Royal Albert Hall</li>
+										<li class="description">1er Juillet</li>
+									</ul>
+								</div>
+							</a>
+						</div>
+						<div class="gauche">
+							<a href="pagesConcert/coldplay/index.html"><img src="img/coldplay.png" class="coldplayimg"></a>
+						</div>
+					</li>
+
+					<li>
+						<div class="droite">
+							<a href="pagesConcert/taylor/index.html"><img src="img/taylor.png" class="taylorimg"></a>
+						</div>
+						<div class="gauche">
+							<a href="pagesConcert/taylor/index.html">
+								<div class="blanc">
+									<ul class="swift">
+										<li class="nom">Taylor Swift</li>
+										<li class="nom2">1989</li>
+										<li class="description">Tour 2015</li>
+										<li class="description">Londres - Hyde Park</li>
+										<li class="description">27 Juin</li>
+									</ul>	
+								</div>
+							</a>
+						</div>
+					</li>
+
+					<li>
+						<div class="droite">
+							<a href="pagesConcert/stromae/index.html">
+								<div class="blanc2">
+									<ul class="papaoutai">
+										<li class="nom">Stromae</li>
+										<li class="nom2">Racine Carrée</li>
+										<li class="description">Tour 2015</li>
+										<li class="description">Montréal - Bell Center</li>
+										<li class="description">29 Septembre</li>
+									</ul>
+								</div>
+							</a>
+						</div>
+						<div class="gauche">
+							<a href="pagesConcert/stromae/index.html"><img src="img/stromae.png" class="stromaeimg"></a>
+						</div>
+					</li>
+
+					<li>
+						<div class="droite">
+							<a href="pagesConcert/u2/index.html"><img src="img/u2.png" class="u2img"></a>
+						</div>
+						<div class="gauche">
+							<a href="pagesConcert/u2/index.html">
+								<div class="blanc">
+									<ul class="bloodysunday">
+										<li class="nom">U2</li>
+										<li class="nom2">iNNOCENCE + eXPERIENCE</li>
+										<li class="description">Tour 2015</li>
+										<li class="description">Paris - AccorHotels Arena</li>
+										<li class="description">10 Novembre</li>
+									</ul>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+		</div>
+	</div>
+
+
+
+<!-- footer -->
+	<footer>
+		<a href="https://www.oculus.com/en-us/" target="blank">
+			<img src="img/logooculus.png" class="oculus">
+		</a>
+		<a href="http://www.giroptic.com/" target="blank">
+			<img src="img/giroptic.png" class="giroptic" >
+		</a>
+		<a href="http://dumondeaubalcon.tumblr.com/" target="blank">
+			<img src="img/dmab.png" class="dmab" />
+		</a>
+		<a href="http://www.espritmusique.fr/" target="blank">
+			<img src="img/ce.png" class="caisseepargne" />
+		</a>
+		<img src="img/facebook.png" class="facebook">
+		<img src="img/twitter.png" class="twitter">
+	</footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
